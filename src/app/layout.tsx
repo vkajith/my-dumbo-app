@@ -1,3 +1,4 @@
+import React from 'react'
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -28,6 +29,28 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav className="bg-gray-800 p-4">
+    <div className="container mx-auto flex justify-between items-center">
+        <div className="text-white text-3xl font-bold">🐘 JUMBO DUMBO</div>
+        <div className="hidden md:flex space-x-4">
+            <a href="about" className="text-gray-300 hover:text-white">About</a>
+            <a href="gallery" className="text-gray-300 hover:text-white">Gallery</a>
+            <a href="diet" className="block text-gray-300 hover:text-white">Diet</a>
+        </div>
+        <div className="md:hidden">
+            <button id="navbar-toggle" className="text-gray-300 focus:outline-none">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="navbar-menu" className="hidden md:hidden">
+        <a href="about" className="block text-gray-300 hover:text-white">About</a>
+        <a href="gallery" className="block text-gray-300 hover:text-white">Gallery</a>
+        <a href="diet" className="block text-gray-300 hover:text-white">Diet</a>
+    </div>
+</nav>
         {children}
       </body>
     </html>
