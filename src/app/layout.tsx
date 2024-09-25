@@ -36,6 +36,8 @@ export default function RootLayout({
             <a href="about" className="text-gray-300 hover:text-white">About</a>
             <a href="gallery" className="text-gray-300 hover:text-white">Gallery</a>
             <a href="diet" className="block text-gray-300 hover:text-white">Diet</a>
+            <a href="popculture" className="block text-gray-300 hover:text-white">Pop Culture</a>
+            <a href="communication" className="block text-gray-300 hover:text-white">Communication</a>
         </div>
         <div className="md:hidden">
             <button id="navbar-toggle" className="text-gray-300 focus:outline-none">
@@ -48,7 +50,8 @@ export default function RootLayout({
     <div id="navbar-menu" className="hidden md:hidden">
         <a href="about" className="block text-gray-300 hover:text-white">About</a>
         <a href="gallery" className="block text-gray-300 hover:text-white">Gallery</a>
-        <a href="diet" className="block text-gray-300 hover:text-white">Diet</a>
+        <a href="popculture" className="block text-gray-300 hover:text-white">Pop Culture</a>
+        <a href="communication" className="block text-gray-300 hover:text-white">Communication</a>
     </div>
 </nav>
         {children}

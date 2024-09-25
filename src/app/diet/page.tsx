@@ -11,10 +11,10 @@ export default function ElephantDiet() {
         <div className="container mx-auto p-8">
             {/* Header Section */}
             <div className="text-center mb-8">
-                <h1 className="text-5xl font-extrabold text-white-700 drop-shadow-lg tracking-wide">
+                <h1 className="text-5xl font-arialRounded text-white-700 drop-shadow-lg tracking-wide">
                     🐘 Elephant Diet 🥗
                 </h1>
-                <p className="text-lg text-gray-800 mt-4 italic">
+                <p className="text-lg font-poppins text-white-800">
                     Discover the tasty treats of our favorite giants!
                 </p>
             </div>
